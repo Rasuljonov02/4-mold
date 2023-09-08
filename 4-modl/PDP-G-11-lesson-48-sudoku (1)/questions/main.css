@@ -1,0 +1,69 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	height: 100vh;
+}
+
+:root {
+	--white: #ffffff;
+	--primary: #161c24;
+	--gray: #94a3b7;
+	--blue-light: #c2deff;
+}
+
+.wrapper {
+	padding: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	height: 100vh;
+	place-items: center;
+	gap: 1rem;
+}
+
+.histories {
+	width: 300px;
+}
+
+.sudoku {
+	width: 600px;
+	height: 600px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	padding: 2px;
+	gap: 2px;
+	background-color: var(--primary);
+}
+
+.sudoku .board {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	background-color: var(--gray);
+	gap: 1px;
+}
+
+.sudoku .board .cell {
+	user-select: none;
+	display: grid;
+	place-items: center;
+	background-color: var(--white);
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.sudoku .board .cell.active {
+	cursor: pointer;
+	background-color: var(--blue-light);
+}
+
+form {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}

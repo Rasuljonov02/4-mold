@@ -1,0 +1,116 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Raleway", sans-serif;
+}
+html {
+	font-size: 16px;
+}
+body {
+	height: 100vh;
+	background: rgb(131, 58, 180);
+	background: linear-gradient(
+		90deg,
+		rgba(131, 58, 180, 1) 0%,
+		rgba(194, 48, 48, 1) 50%,
+		rgba(210, 150, 66, 1) 100%
+	);
+
+	
+}
+
+.wrapper {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+}
+.container {
+	width: 70vmin;
+	height: 70vmin;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2vmin;
+}
+.button-option {
+	background: #fff;
+	width: 22vmin;
+	height: 22vmin;
+	border: none;
+	border-radius: 8px;
+	font-size: 12vmin;
+	color: #d161ff;
+}
+
+.button-option:hover {
+	box-shadow: 0 0 15px rgb(243, 243, 13);
+}
+#restart {
+	font-size: 1.3em;
+	padding: 10px 50px;
+	border-radius: 8px;
+	background: rgb(131, 58, 180);
+	background: linear-gradient(
+		90deg,
+		rgb(58, 180, 95) 0%,
+		rgb(51, 72, 190) 50%,
+		rgb(62, 211, 154) 100%
+	);
+	color: #fff;
+	border: none;
+	position: relative;
+	margin: 1.5em auto 0 auto;
+	display: block;
+}
+
+#restart:hover {
+	background: rgb(63, 94, 251);
+	background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+	transition: 15s all;
+	border: 2px solid black;
+}
+
+#new-game:hover {
+	background: rgb(63, 94, 251);
+	background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+	transition: 15s all;
+	border: 2px solid black;
+}
+
+.popup {
+	background: linear-gradient(
+		90deg,
+		rgba(131, 58, 180, 1) 0%,
+		rgba(194, 48, 48, 1) 50%,
+		rgba(210, 150, 66, 1) 100%
+	);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	display: flex;
+
+	z-index: 2;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 1em;
+	font-size: 10vmin;
+}
+#new-game {
+	font-size: 0.4em;
+	padding: 0.5em 2em;
+	background: rgb(136, 121, 127);
+	background: radial-gradient(circle, rgb(185, 48, 107) 10%, rgb(75, 112, 153) 100%);
+	color: #fff;
+	border-radius: 0.5em;
+	border: none;
+}
+#message {
+	color: #fff;
+	text-align: center;
+	font-size: 1em;
+}
+.popup.hide {
+	display: none;
+}

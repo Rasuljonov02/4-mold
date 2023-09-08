@@ -1,0 +1,122 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 100%;
+	display: grid;
+	place-items: center;
+}
+h1 {
+	color: white;
+	margin-top: 30x;
+}
+.contnirs {
+	width: 1000px;
+	height: 300px;
+	display: grid;
+
+	grid-template-columns: repeat(4, 180px);
+	grid-template-rows: repeat(2, 100px);
+	gap: 50px;
+	margin-top: 80px;
+	justify-content: space-evenly;
+}
+.contnirs .bocs {
+	width: 180px;
+	height: 100px;
+	background-color: white;
+	border-radius: 10px;
+	display: flex;
+	gap: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+
+	cursor: pointer;
+	transition: transform 0.3s;
+}
+.contnirs .bocs:active {
+	transform: scale(0.95);
+}
+.contnirs .bocs .boc {
+	width: 180px;
+	height: 150px;
+	border-radius: 10px;
+}
+.contnirs .bocs span {
+	/* position: absolute; */
+}
+.gg {
+	width: 250px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn {
+	margin-top: 50px;
+	transition: 300ms;
+	padding: 15px 50px;
+	border: none;
+	background: rgb(131, 58, 180);
+	background: linear-gradient(
+		90deg,
+		rgba(131, 58, 180, 1) 0%,
+		rgba(194, 48, 48, 1) 50%,
+		rgba(210, 150, 66, 0.74) 100%
+	);
+	font-weight: 500;
+	font-size: 20px;
+	border-radius: 10px;
+	color: #fffb00;
+	box-shadow: 28px 26px 169px 24px rgba(0, 0, 0, 0.67);
+	-webkit-box-shadow: 28px 26px 169px 24px rgba(0, 0, 0, 0.67);
+	-moz-box-shadow: 28px 26px 169px 24px rgba(0, 0, 0, 0.67);
+	cursor: pointer;
+	transition: transform 0.3s;
+}
+
+.btn:active {
+	color: rgb(0, 0, 0);
+	transform: scale(0.95);
+	background: rgb(63, 94, 251);
+	background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}
+.contnirs::-webkit-scrollbar {
+	width: 0;
+}
+.contnirs {
+	display: grid;
+	width: 80%;
+	height: 230px;
+
+	grid-template-columns: repeat(4, 250px);
+
+	place-items: center;
+	gap: 10px;
+	flex-wrap: wrap;
+
+	overflow: scroll;
+}
+
+@media (max-width: 768px) {
+	#generateButton {
+		font-size: 24px;
+		min-width: 196px;
+	}
+	.genNew {
+		width: 15%;
+		height: 30px;
+		padding: 15px 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	div {
+		width: 80%;
+	}
+}
